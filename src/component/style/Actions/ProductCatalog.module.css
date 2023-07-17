@@ -1,0 +1,14 @@
+.exportbtn {
+    background-color: #13A74B;
+    color: white;
+    border-radius: 8px;
+    border: none;
+    height: 45px;
+    width: 190px;
+    padding: 1px;
+  }
+  
+  .exportbtn:hover {
+    background-color: #4aa06b;
+    color: white;
+  }

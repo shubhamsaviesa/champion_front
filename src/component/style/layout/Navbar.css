@@ -1,0 +1,271 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;1,400&display=swap");
+
+* {
+  font-family: "Poppins", "regular";
+}
+
+.active {
+  color: #13a74b;
+}
+
+.inactive {
+  color: #7d8d9d;
+  text-decoration: none;
+}
+
+.linkHover:hover {
+  color: #13a74b;
+}
+.topMenuContainerupper {
+  overflow-y: hidden;
+}
+
+.topMenuContainer {
+  position: absolute;
+  left: 15%;
+  width: 84vw;
+  height: 50px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 8px #63636308;
+  opacity: 1;
+  border-left: 1px solid lightgray;
+  z-index: 1;
+  display: flex;
+  padding-left: 1px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.topMenuContainer2 {
+  position: absolute;
+  left: 5%;
+  width: 96vw;
+  height: 50px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 8px #63636308;
+  opacity: 1;
+  border-left: 1px solid lightgray;
+  z-index: 1;
+  display: flex;
+  padding-left: 1px;
+}
+
+.notifiactionIconTopimage {
+  width: 31px;
+  height: 31px;
+}
+
+.topHeading {
+  font: normal normal bolder 20px/5px Poppins;
+  letter-spacing: 0px;
+  color: #0e0b3a;
+  opacity: 1;
+  margin-left: 8%;
+  margin-top: 12%;
+}
+
+.menuIconDiv {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+.menuIconSub {
+  width: 53px;
+  height: 36px;
+  opacity: 1;
+  border: 1px solid lightgray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-color: rgb(243, 242, 242);
+  top: 0%;
+  left: 7px;
+  z-index: 99;
+  border-radius: 6px;
+}
+
+.profileContainer {
+  width: 15vw;
+  height: 8vh;
+  left: 77%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+}
+.profileicontop {
+  display: flex;
+}
+.profileicontopimage {
+  width: 35px;
+  height: 35px;
+}
+
+.leftMenuContainer {
+  position: absolute;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 8px #63636308;
+  opacity: 1;
+  border-right: 1px solid rgb(247, 247, 251);
+  left: 1%;
+  width: 14vw;
+}
+
+.leftMenuContainer2 {
+  position: absolute;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 8px #63636308;
+  opacity: 1;
+  border-right: 1px solid rgb(247, 247, 251);
+  left: 1%;
+  width: 4vw;
+}
+
+.leftMenuContainer div {
+  margin-top: 0px;
+}
+
+.sideMenu_champIcon img {
+  width: 18vw;
+  padding: 0 22px 0px 7px;
+}
+
+.sideMenuIcons {
+  display: flex;
+  padding: 20px 0 0 6px;
+  font: normal normal 600 18px/27px Poppins;
+  letter-spacing: 0px;
+  color: #7d8d9d;
+  cursor: pointer;
+}
+
+.sideMenuIcons div {
+  margin-left: 3.5%;
+  position: relative;
+  top: -11px;
+  font-size: 13px;
+  margin-top: 6px;
+  display: flex;
+  align-items: center;
+  margin-right: 5px;
+}
+
+.sideMenuIcons div img {
+  width: 26px;
+  height: 26px;
+  opacity: 1;
+}
+
+.sideMenuIconsHover {
+  display: flex;
+  padding: 20px 0 0 6px;
+  width: 160px;
+  height: 34px;
+  background: #e7f6ed 0% 0% no-repeat padding-box;
+  border-radius: 11px;
+  font: normal normal 600 18px/27px Poppins;
+  letter-spacing: 0px;
+  color: #48bb73;
+}
+
+.sideMenuIconsHover2 {
+  display: flex;
+  padding: 20px 0 0 6px;
+  width: 39px;
+  height: 34px;
+  background: #e7f6ed 0% 0% no-repeat padding-box;
+  border-radius: 11px;
+  font: normal normal 600 18px/27px Poppins;
+  letter-spacing: 0px;
+  color: #48bb73;
+}
+
+.sideMenuIconsHover2 div {
+  margin-left: 3.5%;
+  position: relative;
+  top: -11px;
+  font-size: 13px;
+  margin-top: 6px;
+  display: flex;
+  align-items: center;
+  color: #48bb73;
+}
+.sideMenuIconsHover2 div img {
+  width: 26px;
+  height: 26px;
+  opacity: 1;
+}
+
+.sideMenuIconsHover2 div img:hover {
+  color: green;
+}
+
+.sideMenuIconsHover div {
+  margin-left: 3.5%;
+  position: relative;
+  top: -11px;
+  font-size: 13px;
+  margin-top: 6px;
+  display: flex;
+  align-items: center;
+  color: #48bb73;
+}
+
+.sideMenuIconsHover div img {
+  width: 26px;
+  height: 26px;
+  opacity: 1;
+}
+
+.sideMenuIcons div img:hover {
+  color: green;
+}
+
+.dropdownList_Action ul {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-left: -21px;
+}
+
+.dropdownList_Setting ul {
+  margin-bottom: 10px;
+  margin-top: 10px;
+  margin-left: -21px;
+}
+
+.dropdownList_Action ul li {
+  width: 148px;
+  height: 23px;
+  text-align: left;
+  font: normal normal normal 13px/0px Poppins;
+  letter-spacing: 0px;
+  opacity: 1;
+}
+
+.dropdownList_Action ul li:hover {
+  color: #13a74b;
+  cursor: pointer;
+}
+
+.dropdownList_Setting ul li {
+  width: 148px;
+  height: 23px;
+  text-align: left;
+  font: normal normal normal 13px/0px Poppins;
+  letter-spacing: 0px;
+  color: #7d8d9d;
+  opacity: 1;
+}
+
+.dropdownList_Setting ul li:hover {
+  color: #13a74b;
+  cursor: pointer;
+}
+
+.hidetext {
+  display: none;
+}

@@ -1,0 +1,433 @@
+.boxcontainerforAccountsetting {
+    position: absolute;
+    top: 8%;
+    left: 15%;
+    width: 84vw;
+    height: 165vh;
+    background: #F9FAFC 0% 0% no-repeat padding-box;
+    overflow-x: hidden;
+}
+
+.boxcontainerforAccountsetting2 {
+    position: absolute;
+    top: 8%;
+    left: 5.2%;
+    width: 95vw;
+    height: 165vh;
+    background: #F9FAFC 0% 0% no-repeat padding-box;
+    overflow-x: hidden;
+}
+
+
+
+
+.topaccountbuttons {
+    display: flex;
+    width: 30%;
+}
+
+.accountinfoo {
+    background-color: white;
+    color: white;
+    background-color: #13A74B;
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.formAccout {
+    background-color: white;
+    width: 95%;
+    margin-left: 3%;
+}
+
+.changeinfo {
+    background-color: white;
+    color: white;
+    background-color: rgb(161, 161, 161);
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+
+/*------------------Form-------------------*/
+
+
+.addInvHeading {
+    display: flex;
+    width: 80vw;
+    height: 45px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 8px #63636308;
+    opacity: 1;
+    position: relative;
+    left: 2%;
+}
+
+.subMenu_subheading {
+    font: normal normal normal 16px/25px Poppins;
+    letter-spacing: 0px;
+    color: #7D8D9D;
+}
+
+.addinveForm {
+    position: relative;
+    margin-top: 5%;
+    left: 10%;
+    width: 53vw;
+    height: 100vh;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    opacity: 1;
+    padding-left: 23px;
+    padding-top: 2px;
+}
+
+
+.addinveForm h3 {
+    font: normal normal 600 20px/10px Poppins;
+    letter-spacing: 0px;
+    color: #282C45;
+    opacity: 1;
+    padding-top: 20px;
+}
+
+.inventoryInput_container {
+    width: 23vw;
+    height: 12vh;
+    margin-right: 6.3%;
+}
+
+.inventoryInput_container label {
+    font: normal normal normal 15px/11px Poppins;
+    letter-spacing: 0px;
+    color: #7D8D9D;
+}
+
+.inventoryInput_container input {
+    width: 24vw;
+    height: 4vh;
+    background: #F6F7F8 0% 0% no-repeat padding-box;
+    border: 1px solid #E2E2E2;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+.addinveFormSegment {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 12px;
+    width: 77.5vw;
+    height: 25vh;
+    padding: 2px 15px 15px 15px;
+    margin-bottom: 10px;
+}
+
+
+input[type="file"] {
+    display: none;
+}
+
+.ImageUpload {
+    width: 80vw;
+    display: flex;
+    margin-bottom: 20px;
+
+}
+
+.ImageUpload div {
+    width: 22.9vw;
+    height: 18vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 2px dashed #D6D6D6;
+    border-radius: 16px;
+
+}
+
+.inventoryInput_container select {
+    width: 22.4vw;
+    height: 4.5vh;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #E2E2E2;
+    border-radius: 4px;
+    color: #0E0B3A;
+}
+
+
+
+.BulksubHeading div {
+    margin-top: 2%;
+    margin-left: 7px;
+    margin-right: 2%;
+}
+
+.sampleSelect {
+    width: 14vw;
+    height: 6vh;
+    background: #13A74B 0% 0% no-repeat padding-box;
+    border-radius: 11px;
+    padding: 0 10px 0 11px;
+    color: white;
+    font: normal normal normal 13px/10px Poppins;
+}
+
+.sampleSelectNext {
+    width: 14vw;
+    height: 6.2vh;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #E2E2E2;
+    border-radius: 18px;
+    font: normal normal normal 10px/10px Poppins;
+    letter-spacing: 0px;
+    color: #7D8D9D;
+}
+
+
+.bulkImportChooseFile label {
+    width: 92px;
+    height: 32px;
+    /* UI Properties */
+    background: #E2FFEE 0% 0% no-repeat padding-box;
+    border-radius: 8px;
+    opacity: 1;
+    font: normal normal normal 13px/13px Poppins;
+    letter-spacing: 0px;
+    color: #13A74B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.bulkButtonSubmit:hover {
+    cursor: pointer;
+}
+
+.bulkAddTemplate {
+    background: #E7F6ED 0% 0% no-repeat padding-box;
+    border: 1px solid #DDEEE4;
+    border-radius: 11px;
+    width: 10.5vw;
+    height: 6vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    left: 31%;
+    cursor: pointer;
+}
+
+.bulkAddTemplate p {
+    font: normal normal normal 13px/13px Poppins;
+    letter-spacing: 0px;
+    color: #13A74B;
+}
+
+.bulkimportTable {
+    width: 81.4vw;
+    height: 55vh;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 8px #00000027;
+    border-radius: 10px;
+    position: relative;
+    left: 2.7%;
+}
+
+.addTemplate_input {
+    width: 19.5vw;
+    height: 5vh;
+    font: normal normal medium 22px/13px Poppins;
+    letter-spacing: 0px;
+    color: #0E0B3A;
+    border: none;
+    background: #F6F7F8 0% 0% no-repeat padding-box;
+    border-radius: 9px;
+}
+
+.actionSelect {
+    width: 160px;
+    height: 35px;
+    background: #F1F1F1 0% 0% no-repeat padding-box;
+    border-radius: 11px;
+    opacity: 1;
+    border: none;
+
+}
+
+.actionSelectCont {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    left: 83.7%;
+}
+
+.actionSelect option {
+    text-align: left;
+    font: normal normal normal 20px/13px Poppins;
+    letter-spacing: 0px;
+    color: #0E0B3A
+}
+
+.tableHeading {
+    display: flex;
+    background: #F9F9F9 0% 0% no-repeat padding-box;
+    width: 81.2vw;
+    height: 4vh;
+    border-bottom: 1px solid #00000010;
+    border-top: 1px solid #00000010;
+    padding-top: 10px;
+    padding-left: 3px;
+}
+
+.tableHeading div {
+    width: 13vw;
+    font: normal normal normal 14px/28px Poppins;
+    letter-spacing: 0px;
+    color: #282C45;
+    text-align: left;
+}
+
+.tableRow {
+    display: flex;
+    background: white 0% 0% no-repeat padding-box;
+    width: 81.2vw;
+    height: 4vh;
+    border-bottom: 1px solid #00000010;
+
+    padding-top: 10px;
+    padding-left: 3px;
+}
+
+.tableRow div {
+    width: 13vw;
+    font: normal normal normal 14px/28px Poppins;
+    letter-spacing: 0px;
+    color: #282C45;
+    text-align: left;
+}
+
+.paginationCont {
+    position: relative;
+    left: 82%;
+    margin-top: 1%;
+}
+
+
+
+.productCatalogExportBtn {
+    width: 12vw;
+    height: 6vh;
+    background: #13A74B 0% 0% no-repeat padding-box;
+    border-radius: 11px;
+    padding: 0 10px 0 11px;
+    color: white;
+    font: normal normal normal 13px/10px Poppins;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.bookcatalogHeading div {
+    width: 80vw;
+    height: 100px;
+    display: flex;
+    position: relative;
+    left: 1.7%;
+    margin-right: 5%;
+}
+
+.repricingLogDetails {
+    width: 82vw;
+    height: 6vh;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 2%;
+    top: 2%;
+    margin-bottom: 5%;
+}
+
+.repricingLogDetails .div1 {
+    font: normal normal 600 15px/13px Poppins;
+    letter-spacing: 0px;
+    color: #282C45;
+    margin-right: 4%;
+}
+
+.MuiBox-root css-0 {
+    width: 20vw;
+    height: 20vh;
+    border-radius: 33px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.cardsicon {
+    width: 65px;
+    height: 40px;
+    margin: 2px;
+    margin-top: 20px;
+}
+
+/* ----------------------- */
+
+
+.Input_container {
+    width: 22vw;
+    height: 12vh;
+    margin-right: 6.3%;
+}
+
+.Input_container label {
+    font: normal normal normal 15px/11px Poppins;
+    letter-spacing: 0px;
+    color: #7D8D9D;
+}
+
+.Input_container input {
+    width: 22.5vw;
+    height: 4vh;
+    background: #F6F7F8 0% 0% no-repeat padding-box;
+    border: 1px solid #E2E2E2;
+    border-radius: 4px;
+}
+
+
+.Input_container1 {
+    width: 17.6vw;
+    height: 12vh;
+    margin-right: 2.3%;
+}
+
+.Input_container1 label {
+    font: normal normal normal 15px/11px Poppins;
+    letter-spacing: 0px;
+    color: #7D8D9D;
+}
+
+.Input_container1 input {
+    width: 17.6vw;
+    height: 4vh;
+    background: #F6F7F8 0% 0% no-repeat padding-box;
+    border: 1px solid #E2E2E2;
+    border-radius: 4px;
+}
+
+.Input_container select {
+    width: 22.6vw;
+    height: 4.7vh;
+    background: #F6F7F8 0% 0% no-repeat padding-box;
+    border: 1px solid #E2E2E2;
+    border-radius: 4px;
+    padding: 0 15px 0 15px;
+}
+

@@ -1,0 +1,199 @@
+import React, { useMemo } from "react";
+
+import {
+  useTable,
+  usePagination,
+  useRowSelect,
+  useSortBy,
+  useGlobalFilter,
+} from "react-table";
+import INVENTRY_LISTINGS from "./INVENTRY_LISTINGS.json";
+import { ShipmentColumns } from "./ShipmentColumns";
+import { Checkbox } from "./Checkbox";
+import { GlobalFilter } from "./ShipmentFilter";
+import { BsThreeDots } from "react-icons/bs";
+import {
+  TiArrowUnsorted,
+  TiArrowSortedDown,
+  TiArrowSortedUp,
+} from "react-icons/ti";
+import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
+import ActionInTable from "../../Popups/ActionInTable";
+
+const ShipmentTable = () => {
+  const columns = useMemo(() => ShipmentColumns, []);
+  const data = useMemo(() => INVENTRY_LISTINGS, []);
+
+  const {
+    getTableProps,
+    getTableBodyProps,
+    headerGroups,
+    page,
+    nextPage,
+    previousPage,
+    canPreviousPage,
+    canNextPage,
+    pageOptions,
+    gotoPage,
+    pageCount,
+    setPageSize,
+    state,
+    setGlobalFilter,
+    rows,
+    selectedFlatRows,
+    prepareRow,
+  } = useTable(
+    {
+      columns,
+      data,
+    },
+    useGlobalFilter,
+    useSortBy,
+    usePagination,
+    useRowSelect,
+    (hooks) => {
+      hooks.visibleColumns.push((columns) => [
+        {
+          sn: "selection",
+          Header: ({ getToggleAllRowsSelectedProps }) => (
+            <Checkbox {...getToggleAllRowsSelectedProps()} />
+          ),
+          Cell: ({ row }) => <Checkbox {...row.getToggleRowSelectedProps()} />,
+        },
+        ...columns,
+
+        {
+          id: "Edit",
+          Header: "Action",
+          Cell: ({ row }) => (
+            <div className="dropdown">
+              <ActionInTable />
+            </div>
+          ),
+        },
+      ]);
+    }
+  );
+  const { globalFilter } = state;
+  return (
+    <>
+      <GlobalFilter filter={globalFilter} setFilter={setGlobalFilter} />
+      <div className="actionbuttonintable">
+        <div>
+          <div className="headinglistingintable">Shipment</div>
+        </div>
+        <div className="dropdownnintable">
+          <select className="dropdown_menu" name="cars" id="cars">
+            <option value="#">Action</option>
+            <option value="#">Delete Listings</option>
+          </select>
+        </div>
+      </div>
+      <table {...getTableProps()}>
+        <thead>
+          {headerGroups.map((headerGroup) => (
+            <tr {...headerGroup.getHeaderGroupProps()}>
+              {headerGroup.headers.map((column) => (
+                <th {...column.getHeaderProps(column.getSortByToggleProps())}>
+                  {column.render("Header")}
+                  {(column.Header === "cost Price" ||
+                    column.Header === "Quantity") && (
+                    <span>
+                      {column.isSorted ? (
+                        column.isSortedDesc ? (
+                          <TiArrowSortedDown />
+                        ) : (
+                          <TiArrowSortedUp />
+                        )
+                      ) : (
+                        <TiArrowUnsorted />
+                      )}
+                    </span>
+                  )}
+                </th>
+              ))}
+            </tr>
+          ))}
+        </thead>
+        <tbody {...getTableBodyProps()}>
+          {page.map((row) => {
+            prepareRow(row);
+            return (
+              <tr {...row.getRowProps()}>
+                {row.cells.map((cell) => {
+                  return (
+                    <td style={{ paddingLeft: "8px" }} {...cell.getCellProps()}>
+                      {cell.render("Cell")}
+                    </td>
+                  );
+                })}
+              </tr>
+            );
+          })}
+        </tbody>
+      </table>
+      <table>
+        <tbody>
+          <tr>
+            <td>
+            <div className="bottamcontainer">
+              <div className="exportboxcontainer">
+                <div></div>
+              </div>
+              <div className="paginationcontainer">
+                <div className="pagination">
+                  <a
+                    className="page-link "
+                    onClick={() => previousPage()}
+                    disabled={!canPreviousPage}
+                  >
+                    <AiOutlineLeft />
+                  </a>
+                  <a
+                    className="page-link"
+                    style={{ color: "black" }}
+                    onClick={() => gotoPage(0)}
+                    disabled={!canPreviousPage}
+                  >
+                    1
+                  </a>
+                  <a
+                    className="page-link"
+                    style={{ color: "black" }}
+                    onClick={() => gotoPage(pageCount - 1)}
+                  >
+                    2
+                  </a>
+                  <a
+                    className="page-link"
+                    style={{ color: "black" }}
+                    onClick={() => gotoPage(pageCount - 1)}
+                  >
+                    3
+                  </a>
+                  <a
+                    className="page-link"
+                    style={{ color: "black" }}
+                    onClick={() => gotoPage(pageCount - 1)}
+                  >
+                    <BsThreeDots />
+                  </a>
+                  <a
+                    className="page-link"
+                    onClick={() => nextPage()}
+                    disabled={!canNextPage}
+                  >
+                    <AiOutlineRight />
+                  </a>
+                </div>
+              </div>
+            </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </>
+  );
+};
+
+export default ShipmentTable;

@@ -1,0 +1,155 @@
+.actionbutton {
+  display: flex;
+  justify-content: end;
+}
+
+.exportbutton {
+  margin-right: 5%;
+  margin-top: 2%;
+}
+
+.exportbtn {
+  background-color: #13a74b;
+  color: white;
+  border-radius: 8px;
+  border: 2px solid rgb(1, 216, 1);
+  height: 5vh;
+  width: 22vh;
+}
+
+.exportbtn:hover {
+  background-color: #4aa06b;
+  color: white;
+}
+
+.exportsync {
+  background-color: #dcffe9;
+  color: rgb(14, 241, 25);
+  border-radius: 8px;
+  border: 2px solid rgb(226, 246, 226);
+  height: 5.2vh;
+  width: 20vh;
+}
+
+.globalfiltersListing {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5%;
+  border-radius: 29px;
+  margin-top: 1%;
+}
+
+.searchbaronListing {
+  position: relative;
+  left: 3%;
+  bottom: 15%;
+}
+
+.searchfieldonListing {
+  width: 18vw;
+  height: 5vh;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border-radius: 10px;
+  border: 2px solid rgb(231, 231, 231);
+  font: normal normal normal 13px/10px Poppins;
+  letter-spacing: 0px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 8px;
+}
+
+.searchfieldonListing input {
+  width: 8vw;
+  background: #ffffff 0% 0% no-repeat padding-box;
+}
+
+.searchfieldonListing label {
+  width: 5vw;
+  height: 4vh;
+  /* UI Properties */
+  background: #13a74b 0% 0% no-repeat padding-box;
+  border-radius: 10px;
+  opacity: 1;
+  font: normal normal normal 15px/13px Poppins;
+  letter-spacing: 0px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+
+.searchfieldonListing img {
+  width: 18px;
+}
+
+.channelfilteronlisitng {
+  display: flex;
+  justify-content: center;
+}
+
+.channnelcontaineronListing {
+  position: relative;
+  left: 10%;
+  top: 22%;
+  height: 5vh;
+}
+
+.fdateonLisiting {
+  display: flex;
+  background-color: white;
+  margin-top: 0px;
+  width: 36vw;
+  /* margin-left: 3%; */
+  border: 2px solid rgb(234, 234, 234);
+  height: 58%;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.productDatespan {
+  /* color: rgb(158, 153, 153); */
+  /* margin-left: 10px; */
+  color: black;
+}
+.productDateonListing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.productDateonListing input {
+  width: 11vw;
+  height: 4vh;
+  /* background: #ffffff 0% 0% no-repeat padding-box; */
+  border-radius: 10px;
+  font: normal normal medium 16px/13px Poppins;
+  letter-spacing: 0px;
+  color: #0e0b3a;
+  opacity: 1;
+  border: none;
+  background: transparent;
+}
+
+.buttonClearDates {
+  background-color: #13a74b;
+  color: white;
+  border-radius: 8px;
+  border: 2px solid rgb(1, 216, 1);
+  height: 5vh;
+  width: 23vh;
+  margin-right: 2rem;
+}
+
+.clearDateSpan {
+  margin-left: 1.5rem;
+}
+.clearDateSpan:hover {
+  cursor: pointer;
+}

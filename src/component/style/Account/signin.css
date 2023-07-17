@@ -1,0 +1,140 @@
+/* for image background */
+
+.imagebackgroundforlogin {
+  background-image: url("../../images/signin.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%100%;
+  background-attachment: fixed;
+  height: 98vh;
+  width: 99%;
+  margin: 0.2%;
+  border: 0.8px solid lightgray;
+}
+
+/* Form css */
+
+.signinform {
+  width: 45vw;
+  position: relative;
+  left: 6%;
+  top: 20%;
+  height: 20%;
+}
+
+.topcontaint {
+  height: 65%;
+  margin-bottom: 2rem;
+}
+
+.signinheader {
+  margin: 2%;
+  color: #13a74b;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.subheaderparagraph {
+  width: 27vw;
+  color: #6b6b6b;
+  text-align: center;
+  font-family: "Poppins";
+  left: 19%;
+  position: relative;
+}
+
+.formInput {
+  left: 296px;
+  width: 95%;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #00000017;
+  border-radius: 5px;
+  padding: 2% 3%;
+  margin: 1% 4% 3% 4%;
+  border-left: 5px solid #13a74b;
+}
+
+.forminputdiv {
+  border: none;
+  font-size: 1.1rem;
+  color: #cccccc;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+.forminputdiv2 {
+  border: none;
+  font-size: 1.1rem;
+  color: #cccccc;
+  position: relative;
+}
+.inputforaccountpage {
+  border: none;
+  font-size: 1.1rem;
+  width: 80%;
+  position: relative;
+  border: none;
+  background-color: transparent;
+  resize: none;
+  outline: none;
+}
+
+.checkboxarea {
+  display: flex;
+}
+
+.checkboxbutton {
+  position: relative;
+  left: 2%;
+}
+
+.forgetresetlink {
+  position: absolute;
+  right: 20px;
+}
+
+.forgetlink {
+  text-decoration: none;
+  color: #535353;
+}
+
+.formsubmitbutton {
+  width: 96%;
+  height: 6vh;
+  background: #13a74b;
+  box-shadow: 0px 3px 6px #00000017;
+  border-radius: 10px;
+  font-family: "Poppins";
+  border: none;
+  font-size: 1.1rem;
+  position: relative;
+  color: white;
+  left: 3%;
+}
+
+.formsubmitbutton:hover {
+  border-radius: 50px;
+  color: white;
+  background: #13a74b 0% 0% no-repeat padding-box !important;
+}
+
+/* Right side Sign up button  */
+
+.signuponlogin {
+  position: relative;
+  left: 120.5%;
+  width: 26%;
+  bottom: 17rem;
+  background-color: white !important;
+  color: #13a74b !important;
+  border-radius: 10px;
+  border: none;
+  background-color: transparent;
+  resize: none;
+  outline: none;
+}
+
+.signuponlogin:hover {
+  background-color: #13a74b !important;
+  color: white !important;
+  border-radius: 50px;
+}

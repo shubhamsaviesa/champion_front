@@ -1,0 +1,20 @@
+.Notificationtop {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+}
+
+.notificationtext {
+  margin-left: 2%;
+}
+
+.notificationpara {
+  width: 30%;
+  margin-right: 3%;
+}
+
+.exclamationmark {
+  margin-left: 50%;
+  margin-top: 0.6%;
+  margin-right: 1%;
+}

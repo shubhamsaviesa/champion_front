@@ -1,0 +1,40 @@
+[
+  {
+    "sn": 1,
+    "SKU": "sku123",
+    "bookName": "Lenovo Laptop",
+    "Isbn": "111",
+    "title": "Lenovo IdeaPad Ryzen 5 Hexa Core 5600H - (8 GB/512 GB SSD/Windows 11 Home/4 GB Graphics/NVIDIA GeForce GTX 1650) 15ACH6 Gaming Laptop  (15.6 Inch, Black, 2.25 kg kg)",
+    "itemCond": "-Good",
+    "channel": "Walmart",
+    "costPrice": "54000",
+    "LowestPrice": "51000",
+    "Category": "Elecronics",
+    "profit": "200",
+    "quantity": "120",
+    "lastmodifi": "20-04-2023",
+    "PlayerImageURL": "https://rukminim1.flixcart.com/image/416/416/kynb6vk0/computer/k/j/a/-original-imagaufne7h4hgbz.jpeg?q=70",
+    "Status": "Active",
+    "yourchannel": "Walmart",
+    "cd": "Connected"
+  },
+  {
+    "sn": 2,
+    "SKU": "sku500",
+    "bookName": "realme 10 Pro 5G ",
+    "Isbn": "111",
+    "title": "realme 10 Pro 5G (Hyperspace, 128 GB)  (6 GB RAM)",
+    "itemCond": "Good",
+    "channel": "Walmart",
+    "costPrice": "18999",
+    "LowestPrice": "17000",
+    "Category": "Elecronics",
+    "profit": "120",
+    "quantity": "120",
+    "lastmodifi": "20-04-2023",
+    "PlayerImageURL": "https://rukminim1.flixcart.com/image/128/128/xif0q/mobile/9/n/s/-original-imagkp8yxmxzhjes.jpeg?q=70",
+    "Status": "Inactive",
+    "yourchannel": "Walmart",
+    "cd": "Connected"
+  }
+]

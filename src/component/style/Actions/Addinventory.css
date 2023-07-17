@@ -1,0 +1,361 @@
+.backgroundcontainer {
+  position: absolute;
+  top: 8%;
+  left: 15%;
+  width: 84vw;
+  height: 170vh;
+  background: #f9fafc 0% 0% no-repeat padding-box;
+  overflow-y: hidden;
+}
+
+.backgroundcontainer2 {
+  position: absolute;
+  top: 8%;
+  left: 5%;
+  width: 98vw;
+  height: 170vh;
+  background: #f9fafc 0% 0% no-repeat padding-box;
+  overflow-y: hidden;
+}
+
+.headingbaronaction {
+  width: 84vw;
+  position: relative;
+  background-color: white;
+}
+
+.headingbaronaction2 {
+  width: 94vw;
+  position: relative;
+  background-color: white;
+}
+
+.toptableheading {
+  display: flex;
+  justify-content: space-between;
+}
+
+.toptableheading {
+  display: flex;
+  border: 2px solid #f6f6f6;
+}
+
+.subtoptableheadingone {
+  position: relative;
+  font-size: 15px;
+}
+.subtoptableheadingtwo {
+  position: relative;
+  font-size: 15px;
+}
+
+.addInvHeading {
+  display: flex;
+  width: 80vw;
+  height: 45px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 8px #63636308;
+  opacity: 1;
+  position: relative;
+  left: 2%;
+}
+
+.subMenu_subheading {
+  font: normal normal normal 16px/25px Poppins;
+  letter-spacing: 0px;
+  color: #7d8d9d;
+}
+
+.addinveForm {
+  position: relative;
+  top: 26px;
+  left: 34px;
+  width: 79vw;
+  height: 170vh;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 0px 8px #00000021;
+  border-radius: 10px;
+  opacity: 1;
+  padding-left: 15px;
+  padding-top: 2px;
+}
+
+.addinveForm2 {
+  position: relative;
+  top: 26px;
+  left: 34px;
+  width: 89vw;
+  height: 1vh;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 0px 8px #00000021;
+  border-radius: 10px;
+  opacity: 1;
+  padding-left: 15px;
+  padding-top: 2px;
+}
+
+.addinveForm h3 {
+  font: normal normal 600 20px/10px Poppins;
+  letter-spacing: 0px;
+  color: #282c45;
+  opacity: 1;
+  padding-top: 20px;
+}
+.inventoryInput_container {
+  width: 22vw;
+  height: 12vh;
+  margin-right: 6.3%;
+}
+
+.inventoryInput_container label {
+  font: normal normal normal 15px/11px Poppins;
+  letter-spacing: 0px;
+  color: #7d8d9d;
+}
+.inventoryInput_container input {
+  width: 22vw;
+  height: 4vh;
+  background: #f6f7f8 0% 0% no-repeat padding-box;
+  border: 1px solid #e2e2e2;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+.addinveFormSegment {
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border-radius: 12px;
+  width: 77.5vw;
+  height: 25vh;
+  padding: 2px 15px 15px 15px;
+  margin-bottom: 10px;
+}
+
+input[type="file"] {
+  display: none;
+}
+.ImageUpload {
+  width: 80vw;
+  display: flex;
+  margin-bottom: 20px;
+}
+.ImageUpload div {
+  width: 22.9vw;
+  height: 18vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 2px dashed #d6d6d6;
+  border-radius: 16px;
+}
+.inventoryInput_container select {
+  width: 22.4vw;
+  height: 4.5vh;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 1px solid #e2e2e2;
+  border-radius: 4px;
+  color: #0e0b3a;
+}
+
+.BulksubHeading div {
+  margin-top: 2%;
+  margin-left: 7px;
+  margin-right: 2%;
+}
+.sampleSelect {
+  width: 14vw;
+  height: 6vh;
+  background: #13a74b 0% 0% no-repeat padding-box;
+  border-radius: 11px;
+  padding: 0 10px 0 11px;
+  color: white;
+  font: normal normal normal 13px/10px Poppins;
+}
+
+.sampleSelectNext {
+  width: 14vw;
+  height: 6.2vh;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 1px solid #e2e2e2;
+  border-radius: 18px;
+  font: normal normal normal 10px/10px Poppins;
+  letter-spacing: 0px;
+  color: #7d8d9d;
+}
+
+.bulkImportChooseFile label {
+  width: 92px;
+  height: 32px;
+  /* UI Properties */
+  background: #e2ffee 0% 0% no-repeat padding-box;
+  border-radius: 8px;
+  opacity: 1;
+  font: normal normal normal 13px/13px Poppins;
+  letter-spacing: 0px;
+  color: #13a74b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bulkButtonSubmit:hover {
+  cursor: pointer;
+}
+
+.bulkAddTemplate {
+  background: #e7f6ed 0% 0% no-repeat padding-box;
+  border: 1px solid #ddeee4;
+  border-radius: 11px;
+  width: 10.5vw;
+  height: 6vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+  left: 31%;
+  cursor: pointer;
+}
+
+.bulkAddTemplate p {
+  font: normal normal normal 13px/13px Poppins;
+  letter-spacing: 0px;
+  color: #13a74b;
+}
+
+.bulkimportTable {
+  width: 81.4vw;
+  height: 55vh;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 0px 8px #00000027;
+  border-radius: 10px;
+  position: relative;
+  left: 2.7%;
+}
+
+.addTemplate_input {
+  width: 19.5vw;
+  height: 5vh;
+  font: normal normal medium 22px/13px Poppins;
+  letter-spacing: 0px;
+  color: #0e0b3a;
+  border: none;
+  background: #f6f7f8 0% 0% no-repeat padding-box;
+  border-radius: 9px;
+}
+
+.actionSelect {
+  width: 160px;
+  height: 35px;
+  background: #f1f1f1 0% 0% no-repeat padding-box;
+  border-radius: 11px;
+  opacity: 1;
+  border: none;
+}
+
+.actionSelectCont {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+  left: 83.7%;
+}
+.actionSelect option {
+  text-align: left;
+  font: normal normal normal 20px/13px Poppins;
+  letter-spacing: 0px;
+  color: #0e0b3a;
+}
+
+.tableHeading {
+  display: flex;
+  background: #f9f9f9 0% 0% no-repeat padding-box;
+  width: 81.2vw;
+  height: 4vh;
+  border-bottom: 1px solid #00000010;
+  border-top: 1px solid #00000010;
+  padding-top: 10px;
+  padding-left: 3px;
+}
+
+.tableHeading div {
+  width: 13vw;
+  font: normal normal normal 14px/28px Poppins;
+  letter-spacing: 0px;
+  color: #282c45;
+  text-align: left;
+}
+
+.tableRow {
+  display: flex;
+  background: white 0% 0% no-repeat padding-box;
+  width: 81.2vw;
+  height: 4vh;
+  border-bottom: 1px solid #00000010;
+
+  padding-top: 10px;
+  padding-left: 3px;
+}
+
+.tableRow div {
+  width: 13vw;
+  font: normal normal normal 14px/28px Poppins;
+  letter-spacing: 0px;
+  color: #282c45;
+  text-align: left;
+}
+
+.paginationCont {
+  position: relative;
+  left: 82%;
+  margin-top: 1%;
+}
+
+.productCatalogExportBtn {
+  width: 12vw;
+  height: 6vh;
+  background: #13a74b 0% 0% no-repeat padding-box;
+  border-radius: 11px;
+  padding: 0 10px 0 11px;
+  color: white;
+  font: normal normal normal 13px/10px Poppins;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.bookcatalogHeading div {
+  width: 80vw;
+  height: 100px;
+  display: flex;
+  position: relative;
+  left: 1.7%;
+  margin-right: 5%;
+}
+
+.repricingLogDetails {
+  width: 82vw;
+  height: 6vh;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  left: 2%;
+  top: 2%;
+  margin-bottom: 5%;
+}
+
+.repricingLogDetails .div1 {
+  font: normal normal 600 15px/13px Poppins;
+  letter-spacing: 0px;
+  color: #282c45;
+  margin-right: 4%;
+}
+
+.MuiBox-root css-0 {
+  width: 20vw;
+  height: 20vh;
+  border-radius: 33px;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}

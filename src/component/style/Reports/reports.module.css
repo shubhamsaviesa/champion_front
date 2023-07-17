@@ -1,0 +1,281 @@
+.BoxContainer {
+  width: 91%;
+  height: 100%;
+  background: var(---f6f6f6-bg);
+  background: #F9FAFC;
+  position: relative;
+  top: 2rem;
+  left: 15.7%;
+  padding: 2%;
+
+}
+
+.BoxContainer2 {
+  width: 100%;
+  height: 100%;
+  background: var(---f6f6f6-bg);
+  background: #F9FAFC;
+  position: relative;
+  top: 2rem;
+  left: 5%;
+  padding: 2%;
+
+}
+
+.sectionOne {
+  width: 90%;
+}
+
+.graphcontainerone {
+  display: flex;
+  flex-direction: row;
+
+}
+
+.headings {
+  display: flex;
+  background-color: white;
+  justify-content: space-between;
+  padding: 2%;
+  width: 90%;
+}
+
+.headingtext {
+  font-weight: bold;
+}
+
+.headingselectbox {
+  border-radius: 8px;
+  border-color: rgb(239, 239, 239);
+}
+
+.headingselectboxforlisting {
+  border-radius: 8px;
+  border-color: rgb(239, 239, 239);
+  color: rgb(0, 133, 0);
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.graphone {
+  width: 90%;
+  height: 300px;
+  display: flex;
+  background-color: white;
+}
+
+.graphcontainertwo {
+  display: flex;
+  flex-direction: row;
+  margin-top: 5%;
+
+}
+
+.graphtwo {
+  width: 90%;
+  height: 300px;
+  display: flex;
+  background-color: white;
+}
+
+.graphthree {
+  /* width: 90%; */
+  /* height: 300px; */
+  background-color: white;
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+}
+
+.first {
+  font-size: 50px;
+  font-weight: bold;
+ 
+}
+
+.second {
+  font-size: 25px;
+}
+
+.third {
+  font-size: 20px;
+  color: rgb(142, 142, 142);
+  word-spacing: 1px;
+  margin-top: 5%;
+}
+
+
+
+.graphfour {
+  width: 60%;
+  height: 300px;
+  display: flex;
+  background-color: white;
+}
+
+.BoxContainerTwo {
+  width: 100%;
+  height: 100%;
+  background: var(---f6f6f6-bg);
+  background: #ffffff;
+  position: relative;
+  top: 2rem;
+  left: 15.7%;
+  padding: 2%;
+
+}
+
+
+
+.boxbrand {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  border: 5px solid #4F79F7;
+  margin: 5px;
+}
+
+.BoxBrandContainer {
+  background-color: white;
+  font: normal normal normal 14px/21px Poppins;
+  padding: 2px 0 0 3px;
+  color: #727E8C;
+  width: 50%;
+  margin-right: 106px
+}
+
+.firstbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor:pointer
+    
+}
+.firstboxx {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+    
+}
+
+
+.graphthreeforbox {
+  width: 90%;
+  /* height: 300px; */
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: space-evenly;
+  align-items: center;
+}
+.imagereportbox{
+  padding-top: 10%;
+  background-color: rgb(246, 246, 246);
+  border-radius: 5px;
+  height: 150px;
+  width: 190px;
+  text-align: center;
+  margin: 5px;
+  align-items: center;
+  margin-right: 10%;
+  
+}
+
+
+/* For By Time */
+
+.actionbutton {
+  display: flex;
+  justify-content: end;
+}
+
+.exportbtn {
+  background-color: #13A74B;
+  color: white;
+  border-radius: 8px;
+  border: 2px solid rgb(1, 216, 1);
+  height: 5vh;
+  width: 20vh;
+  border:none;
+
+}
+
+.exportbtn:hover {
+  background-color: #4aa06b;
+  color: white;
+}
+
+.exportsync {
+  background-color: #dcffe9;
+  color: rgb(14, 241, 25);
+  border-radius: 8px;
+  border: 2px solid rgb(226, 246, 226);
+  height: 5.2vh;
+  width: 20vh;
+}
+
+.globalfiltersListing {
+  display: flex;
+  justify-content: space-between;
+  height: 5%;
+  border-radius: 29px;
+  margin-top: 1%;
+  width: 83%;
+}
+
+
+
+
+.searchfieldonListing input {
+  width: 8vw;
+  background: #ffffff 0% 0% no-repeat padding-box;
+}
+
+
+.channelfilteronlisitng {
+  display: flex;
+  justify-content: center;
+}
+
+.channnelcontaineronListing {
+  position: relative;
+  left: 5%;
+  top: 22%;
+  height: 5vh;
+}
+
+.fdateonLisiting {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  margin-top: 11px;
+  width: 34vw;
+  margin-left: 2%;
+  border: 2px solid rgb(234, 234, 234);
+  height: 65%;
+  border-radius: 10px;
+}
+
+.productDatespan {
+  color: rgb(158, 153, 153);
+  margin-left: 5px;
+}
+
+.productDateonListing input {
+  width: 12vw;
+  height: 4vh;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border-radius: 10px;
+  font: normal normal medium 16px/13px Poppins;
+  letter-spacing: 0px;
+  color: #0E0B3A;
+  opacity: 1;
+  border: none;
+}
+.reportExportbutton{
+  width: 100%;
+  margin-left: 85%;
+  margin-top: 10%;
+  margin-bottom: 5%;
+}

@@ -1,0 +1,92 @@
+.imagebackgroundforsignup {
+  background-image: url("../../images/singnup.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%100%;
+  background-attachment: fixed;
+  height: 98vh;
+  width: 99%;
+  margin: 0.2%;
+  border: 0.8px solid lightgray;
+}
+
+.signupform {
+  width: 45vw;
+  position: relative;
+  left: 50%;
+  top: 11%;
+  height: 20%;
+  /* border: 2px solid red; */
+}
+
+.topcontaintonsignup {
+  height: 65%;
+  /* border: 2px solid green; */
+}
+
+.subheaderparagraphonsingup {
+  width: 25vw;
+  color: #6b6b6b;
+  text-align: center;
+  font-family: "Poppins";
+  left: 22%;
+  position: relative;
+}
+
+.signuphalfinput {
+  display: flex;
+}
+
+.formInput1 {
+  width: 46.5%;
+  height: 7vh;
+  position: relative;
+  left: 2.5%;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px #00000017;
+  border-radius: 8px;
+  padding: 2% 3%;
+  margin: 1%;
+  margin-top: 1%;
+  border-left: 4px solid #13a74b;
+  margin-bottom: 3%;
+}
+
+.formsubmitbuttononsingup {
+  width: 96%;
+  height: 6vh;
+  background: #13a74b !important;
+  box-shadow: 0px 3px 6px #00000017;
+  border-radius: 10px;
+  font-family: "Poppins";
+  border: none;
+  font-size: 1.1rem;
+  color: white !important;
+  margin-top: 4%;
+  position: relative;
+  left: 3.5%;
+  margin-top: 10px !important;
+}
+.formsubmitbuttononsingup:hover {
+  border-radius: 50px;
+  color: white;
+  background: #13a74b 0% 0% no-repeat padding-box !important;
+}
+.signinonsignup {
+  position: fixed !important;
+  background-color: white !important;
+  color: #13a74b !important;
+  width: 11%;
+  left: 7.5%;
+  bottom: 23.5rem;
+}
+
+.signinonsignup:hover {
+  background-color: #13a74b !important;
+  color: white !important;
+  border-radius: 50px;
+}
+
+.errortext {
+  width: 46.5%;
+  position: relative;
+}
