@@ -41,7 +41,11 @@ const Btn1 = styled(Button)`
 
 const EbayConnect = () => {
   const Navigation = useNavigate();
-  const initialValues = { nickname: "", ebayid: "", ebaysecret: "" };
+  const initialValues = {
+    nickname: "",
+    ebayclientid: "",
+    ebayclientsecret: "",
+  };
   const [showTable, setShowTable] = useState(true);
   const customId = "custom-id-yes";
 
@@ -61,7 +65,7 @@ const EbayConnect = () => {
   const resForEbay = useSelector((state) => state.Ebay);
   console.log("resForEbay", resForEbay);
 
-  const requiredFields = ["nickname", "ebayid", "ebaysecret"];
+  const requiredFields = ["nickname", "ebayclientid", "ebayclientsecret"];
 
   const handleConnect = (e) => {
     e.preventDefault();
@@ -82,8 +86,9 @@ const EbayConnect = () => {
           "ebay url res when you click on the ebay button",
           resForEbay
         );
-        if (resForEbay.data.Url) {
-          let ebayUrl = resForEbay.data.Url;
+        if (resForEbay.EbayData.Url) {
+          console.log('resForEbay.data.Url',resForEbay.EbayData.Url)
+          let ebayUrl = resForEbay.EbayData.Url;
           let params = `scrollbars=no,resizable=no,status=no,location=no,toolbar=no,menubar=no,
             width=900,height=450,left=300,top=200`;
           window.open(ebayUrl, "ebay", params);
@@ -176,9 +181,9 @@ const EbayConnect = () => {
                         <input
                           style={{ width: "100%", marginBottom: "0.8rem" }}
                           type="text"
-                          name="ebayid"
+                          name="ebayclientid"
                           onChange={handleEbayInput}
-                          value={formValues.ebayid}
+                          value={formValues.ebayclientid}
                         />
                       </div>
                     </div>
@@ -188,9 +193,9 @@ const EbayConnect = () => {
                     <input
                       style={{ width: "100%" }}
                       type="text"
-                      name="ebaysecret"
+                      name="ebayclientsecret"
                       onChange={handleEbayInput}
-                      value={formValues.ebaysecret}
+                      value={formValues.ebayclientsecret}
                     />
 
                     <div
