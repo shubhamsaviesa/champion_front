@@ -2,6 +2,7 @@ import React, { useEffect, useContext } from "react";
 import { useSearchParams, useLocation, useNavigate } from "react-router-dom";
 import { RedirectEbayUrl } from "../../../../rtk/features/Marketplace/EbaySlice";
 import { useSelector, useDispatch } from "react-redux";
+import axios from "axios"; // Import axios
 
 const EbayComponent = () => {
   let navigate = useNavigate();
@@ -11,35 +12,23 @@ const EbayComponent = () => {
   let search = useLocation().search;
   const ebayResponse = useSelector((state) => state.Ebay.EbayData.status);
 
-  //   const ebayTokenApi = async (codes) => {
-  //     console.log("codes", codes);
-  //     try {
-  //       await axiosInstance({
-  //         url: "/EbayTokenGenrate",
-  //         method: "POST",
-  //         data: { code: codes },
-  //       }).then((res) => {
-  //         console.log("res in ebay component", res);
-  //         if (res.data.access_token) {
-  //           setReloadChannel(true);
-  //           navigate("/ebayCompleted");
-  //           //  let newWin = window.open('https://app.bookcommerce.com/channels','anyname','width=10,height=1,left=5,top=3')
-  //           //  newWin.close()
-  //         }
-  //       });
-  //     } catch (e) {
-  //       console.log(e);
-  //     }
-  //   };
-
-  const ebayTokenApi = async (codes) => {
+  const ebayTokenApi = async (code) => {
     try {
-      dispatch(RedirectEbayUrl(codes)).then(() => {
-        switch (ebayResponse) {
-          case "res.data.access_token":
-            navigate("/ebayCompleted");
-        }
-      });
+      const config = {
+        headers: {
+          Authorization: `${localStorage.getItem("token")}`,
+          "Content-Type": "application/json",
+        },
+      };
+      console.log("ebayTokenApi  called or not");
+      // Send the formValues data as the request payload along with the config object
+      const response = await axios.post(
+        "http://api.championlister.com/api/user/EbayTokenGenrate",
+        code,
+        config
+      );
+      console.log("response in after we get code", response);
+      // Assuming the response contains the eBay data, you can access it like this:
     } catch (e) {
       console.log("error", e);
     }
