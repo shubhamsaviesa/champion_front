@@ -12,6 +12,8 @@ import { useSelector, useDispatch } from "react-redux";
 import { InsertEbayData } from "../../../../rtk/features/Marketplace/EbaySlice";
 import { toast } from "react-toastify";
 import _ from "lodash";
+import AxiosInstance from "../../../../Api/AxiosInstance";
+import axios from "axios"; // Import axios
 
 const Btn = styled(Button)`
   font: normal normal normal 15px Poppins;
@@ -41,11 +43,7 @@ const Btn1 = styled(Button)`
 
 const EbayConnect = () => {
   const Navigation = useNavigate();
-  const initialValues = {
-    nickname: "",
-    ebayclientid: "",
-    ebayclientsecret: "",
-  };
+  const initialValues = { nickname: "", ebayid: "", ebaysecret: "" };
   const [showTable, setShowTable] = useState(true);
   const customId = "custom-id-yes";
 
@@ -65,10 +63,62 @@ const EbayConnect = () => {
   const resForEbay = useSelector((state) => state.Ebay);
   console.log("resForEbay", resForEbay);
 
-  const requiredFields = ["nickname", "ebayclientid", "ebayclientsecret"];
+  const requiredFields = ["nickname", "ebayid", "ebaysecret"];
 
-  const handleConnect = (e) => {
+  // const handleConnect = (e) => {
+  //   e.preventDefault();
+  //   const hasEmptyFields = requiredFields.some(
+  //     (fieldName) => !formValues[fieldName]
+  //   );
+
+  //   if (hasEmptyFields) {
+  //     toast.error("Please fill all the required fields", {
+  //       toastId: customId,
+  //     });
+  //     return;
+  //   }
+
+  //   dispatch(InsertEbayData(formValues))
+  //     .then(() => {
+  //       console.log(
+  //         "ebay url res when you click on the ebay button",
+  //         resForEbay
+  //       );
+  //       if (resForEbay.EbayData.Url) {
+  //         let ebayUrl = resForEbay.EbayData.Url;
+  //         console.log("it is go inside resForEbay.EbayData.Url");
+  //         let params = `scrollbars=no,resizable=no,status=no,location=no,toolbar=no,menubar=no,
+  //           width=900,height=450,left=300,top=200`;
+  //         window.open(ebayUrl, "ebay", params);
+  //         setEbaynewTab(ebayUrl);
+  //       }
+  //       switch (ebayStatus) {
+  //         case "succes":
+  //           toast.success(" Connected !", { toastId: customId });
+  //           break;
+  //         case "fail":
+  //           toast.error("Failed.", {
+  //             toastId: customId,
+  //           });
+  //           break;
+  //         case "Internal server error":
+  //           toast.error("Backend server Crash", {
+  //             toastId: customId,
+  //           });
+  //           break;
+  //         default:
+  //           break;
+  //       }
+  //     })
+  //     .catch((error) => {
+  //       toast.error(error.message, {
+  //         toastId: customId,
+  //       });
+  //     });
+  // };
+  const handleConnect = async (e) => {
     e.preventDefault();
+
     const hasEmptyFields = requiredFields.some(
       (fieldName) => !formValues[fieldName]
     );
@@ -80,43 +130,37 @@ const EbayConnect = () => {
       return;
     }
 
-    dispatch(InsertEbayData(formValues))
-      .then(() => {
-        console.log(
-          "ebay url res when you click on the ebay button",
-          resForEbay
-        );
-        if (resForEbay.EbayData.Url) {
-          console.log('resForEbay.data.Url',resForEbay.EbayData.Url)
-          let ebayUrl = resForEbay.EbayData.Url;
-          let params = `scrollbars=no,resizable=no,status=no,location=no,toolbar=no,menubar=no,
-            width=900,height=450,left=300,top=200`;
-          window.open(ebayUrl, "ebay", params);
-          setEbaynewTab(ebayUrl);
-        }
-        switch (ebayStatus) {
-          case "succes":
-            toast.success(" Connected !", { toastId: customId });
-            break;
-          case "fail":
-            toast.error("Failed.", {
-              toastId: customId,
-            });
-            break;
-          case "Internal server error":
-            toast.error("Backend server Crash", {
-              toastId: customId,
-            });
-            break;
-          default:
-            break;
-        }
-      })
-      .catch((error) => {
-        toast.error(error.message, {
-          toastId: customId,
-        });
-      });
+    console.log("form", formValues);
+    // setShowCircle(true);
+    try {
+      // Create the custom config object with the Authorization header and Content-Type
+      const config = {
+        headers: {
+          Authorization: `${localStorage.getItem("token")}`,
+          "Content-Type": "application/json",
+        },
+      };
+
+      // Send the formValues data as the request payload along with the config object
+      const response = await axios.post(
+        "http://api.championlister.com/api/user/ebaycredential",
+        formValues,
+        config
+      );
+      console.log("response in ebay after post", response);
+      // Assuming the response contains the eBay data, you can access it like this:
+      console.log("ebay url res", response.data.Url);
+
+      if (response.data.Url) {
+        let ebayUrl = response.data.Url;
+        let params = `scrollbars=no,resizable=no,status=no,location=no,toolbar=no,menubar=no,width=900,height=450,left=300,top=200`;
+        window.open(ebayUrl, "ebay", params);
+        setEbaynewTab(ebayUrl);
+        // setShowCircle(false);
+      }
+    } catch (e) {
+      console.log(e);
+    }
   };
 
   let ChannelConnectsrender;
@@ -181,9 +225,9 @@ const EbayConnect = () => {
                         <input
                           style={{ width: "100%", marginBottom: "0.8rem" }}
                           type="text"
-                          name="ebayclientid"
+                          name="ebayid"
                           onChange={handleEbayInput}
-                          value={formValues.ebayclientid}
+                          value={formValues.ebayid}
                         />
                       </div>
                     </div>
@@ -193,9 +237,9 @@ const EbayConnect = () => {
                     <input
                       style={{ width: "100%" }}
                       type="text"
-                      name="ebayclientsecret"
+                      name="ebaysecret"
                       onChange={handleEbayInput}
-                      value={formValues.ebayclientsecret}
+                      value={formValues.ebaysecret}
                     />
 
                     <div
