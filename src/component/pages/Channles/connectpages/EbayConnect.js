@@ -12,7 +12,8 @@ import { useSelector, useDispatch } from "react-redux";
 import { InsertEbayData } from "../../../../rtk/features/Marketplace/EbaySlice";
 import { toast } from "react-toastify";
 import _ from "lodash";
-import axios from "axios";
+import AxiosInstance from "../../../../Api/AxiosInstance";
+import axios from "axios"; // Import axios
 
 const Btn = styled(Button)`
   font: normal normal normal 15px Poppins;
@@ -106,8 +107,8 @@ const EbayConnect = () => {
       if (response.data.Url) {
         let ebayUrl = response.data.Url;
         let params = `scrollbars=no,resizable=no,status=no,location=no,toolbar=no,menubar=no,width=900,height=450,left=300,top=200`;
-        window.open(ebayUrl, "ebay", params);
-        setEbaynewTab(ebayUrl);
+        window.open(ebayUrl);
+        // setEbaynewTab(ebayUrl);
         // setShowCircle(false);
       }
     } catch (e) {

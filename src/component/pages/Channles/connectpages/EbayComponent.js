@@ -1,4 +1,4 @@
-import React, { useEffect, useContext } from "react";
+import React, { useState, useContext, useEffect } from "react";
 import { useSearchParams, useLocation, useNavigate } from "react-router-dom";
 import { RedirectEbayUrl } from "../../../../rtk/features/Marketplace/EbaySlice";
 import { useSelector, useDispatch } from "react-redux";
@@ -7,6 +7,7 @@ import axios from "axios"; // Import axios
 const EbayComponent = () => {
   let navigate = useNavigate();
   const dispatch = useDispatch();
+  const [reloadChannel, setReloadChannel] = useState(false);
 
   let [searchParams, setSearchParams] = useSearchParams();
   let search = useLocation().search;
@@ -20,13 +21,18 @@ const EbayComponent = () => {
           "Content-Type": "application/json",
         },
       };
+
       console.log("ebayTokenApi  called or not");
       // Send the formValues data as the request payload along with the config object
       const response = await axios.post(
         "http://api.championlister.com/api/user/EbayTokenGenrate",
-        code,
+        { code },
         config
       );
+      if (response?.data?.access_token) {
+        setReloadChannel(true);
+        navigate("/ebayCompleted");
+      }
       console.log("response in after we get code", response);
       // Assuming the response contains the eBay data, you can access it like this:
     } catch (e) {

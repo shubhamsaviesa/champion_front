@@ -124,6 +124,9 @@ function App() {
           >
             <Route path="/ebayCompleted" element={<EbayComponent />} />
           </Route>
+          <Route path="/ebay" element={<PrivateRoute isAuthenticated={""} />}>
+            <Route path="/ebay" element={<EbayComponent />} />
+          </Route>
           <Route
             path="/SearsConnect"
             element={<PrivateRoute isAuthenticated={""} />}
