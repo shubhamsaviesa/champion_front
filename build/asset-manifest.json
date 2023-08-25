@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.04d5c1eb.css",
-    "main.js": "/static/js/main.9bd6680f.js",
+    "main.js": "/static/js/main.3c82f379.js",
     "static/media/signin.jpg": "/static/media/signin.f7414f87b196abeb4f7d.jpg",
     "static/media/singnup.jpg": "/static/media/singnup.611c668d1ae87b25d5b2.jpg",
     "static/media/Champlogonew.png": "/static/media/Champlogonew.49091c51ee7ffd3a0f4e.png",
@@ -15,10 +15,10 @@
     "static/media/upload.svg": "/static/media/upload.b65474ad372993b02302bfb8d1847939.svg",
     "static/media/upload2.svg": "/static/media/upload2.b9d5c95fe72bc9de068cc0ff1384c239.svg",
     "main.04d5c1eb.css.map": "/static/css/main.04d5c1eb.css.map",
-    "main.9bd6680f.js.map": "/static/js/main.9bd6680f.js.map"
+    "main.3c82f379.js.map": "/static/js/main.3c82f379.js.map"
   },
   "entrypoints": [
     "static/css/main.04d5c1eb.css",
-    "static/js/main.9bd6680f.js"
+    "static/js/main.3c82f379.js"
   ]
 }
