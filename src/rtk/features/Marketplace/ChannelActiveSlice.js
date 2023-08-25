@@ -21,6 +21,7 @@ const initialState = {
 //     console.log(e)
 //   }
 // })
+console.log('token',localStorage.getItem("token"))
 
 export const FetchChannelActiveData = createAsyncThunk(
   "channel/ChannelActiveSlice",

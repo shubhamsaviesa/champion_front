@@ -3,7 +3,7 @@ import axios from "axios";
 
 
 // const Api_url = "http://localhost:5000/api/user";
-const Api_url = "http://api.championlister.com/api/user";
+const Api_url = "https://api.championlister.com/api/user";
 
 const token = localStorage.getItem("token");
 const toke2 = localStorage.getItem("user");
@@ -11,10 +11,10 @@ const toke2 = localStorage.getItem("user");
 
 const AxiosInstance = axios.create({
   baseURL: Api_url,
-  timeout: 10000,
+  timeout: 100000,
   headers: {
     Authorization: token,
-    toke2,
+    // toke2,
     "Content-Type": "application/json",
   },
 });

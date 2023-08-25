@@ -18,8 +18,8 @@ export const fetchConnection = createAsyncThunk("user/fetchUsers", async () => {
     },
   };
   const response = await axios.get(
-    // "http://localhost:5000/api/user/channelSetting",
-    Api_url+'/channelSetting',
+    "http://localhost:5000/api/user/channelSetting",
+    // Api_url+'/channelSetting',
     config
   );
   return response.data;

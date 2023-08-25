@@ -16,6 +16,7 @@ export const insertAddInventoryData = createAsyncThunk(
   "inventory/addinventory",
 
   async (formData) => {
+    console.log("formData1111111",formData)
     const config = {
       headers: {
         Authorization: `${localStorage.getItem("token")}`,
